@@ -8,8 +8,11 @@ import NotificationButton from '../NotificationButton';
 
 function SalesCard() {
 
-  const [startDate, setStartDate] = useState(new Date());
-  const [endDate, setEndDate] = useState(new Date());
+  const minDate = (new Date().setDate(new Date().getDate() - 365));
+  const maxDate = new Date();
+
+  const [startDate, setStartDate] = useState(minDate);
+  const [endDate, setEndDate] = useState(maxDate);
 
 
   return (
