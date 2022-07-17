@@ -1,7 +1,6 @@
 import 'react-datepicker/dist/react-datepicker.css';
 
 import axios from 'axios';
-import React from 'react';
 import { useEffect, useState } from 'react';
 import DatePicker from 'react-datepicker';
 
